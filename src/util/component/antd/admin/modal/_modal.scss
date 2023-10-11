@@ -1,0 +1,36 @@
+// Start ant-modal
+.ant-modal {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    .ant-modal-content {
+        max-height: 95vh !important;
+
+        .ant-modal-header {
+            height: 50px !important;
+            margin-bottom: 10px !important;
+
+            .ant-modal-title {
+                color: #3790c7 !important;
+                font-size: 20px;
+            }
+        }
+
+        .ant-modal-body {
+            // max-height: calc(100% - 50px) !important;
+            max-height: 83vh !important;
+            overflow-y: scroll !important;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgb(212, 212, 212) !important;
+                border-radius: 10px;
+            }
+            
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+        }
+    }
+}
+// End ant-modal

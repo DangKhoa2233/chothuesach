@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.test {
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #a3b409;
+        width: 250px;
+        height: 250px;
+        border-radius: 70%;
+        transform: translate(50%, 50%);
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 22%;
+        right: 25%;
+        background-color: #0b7ec5c2;
+        width: 80px;
+        height: 80px;
+        border-radius: 70%;
+        transform: translate(50%, 50%);
+        z-index: 1;
+    }
+}
